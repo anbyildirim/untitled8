@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<html> 
+<head> 
+    <meta charset="utf-8">
+    <title>Search</title> 
+</head> 
+<body> 
+    <form action="/search/" method="get"> 
+        <input type="text" name="q"> 
+        <input type="submit" value="Search"> 
+        <li>
+            <label for="u">for user input</label>
+            <input name="u">
+            {% for categories in types %}
+                <p>{{ categories }}</p>
+            {% endfor %}
+
+        </li>
+    </form> 
+</body> 
+</html>
